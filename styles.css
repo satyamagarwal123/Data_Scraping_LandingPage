@@ -959,7 +959,211 @@ footer {
     color: white;
 }
 
-/* Responsive Styles */
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.why-choose-us .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.why-choose-us .benefits-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.why-choose-us .benefits-list li {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.why-choose-us .benefits-list li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-size: 20px;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.features .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.features-image {
+    flex: 1;
+    text-align: center;
+}
+
+.features-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.features-list {
+    flex: 1;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.feature-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.feature-text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.feature-text p {
+    color: var(--text-light);
+}
+
+/* Ready to Harness the Power of Web Data Section */
+.cta {
+    padding: 60px 0;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.btn-light {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.btn-light:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.faq .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.faq-question h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.faq-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.faq-toggle svg {
+    width: 24px;
+    height: 24px;
+}
+
+.faq-answer {
+    padding: 20px;
+    display: none;
+    border-top: 1px solid var(--border-color);
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.faq-item.active .faq-toggle svg {
+    transform: rotate(45deg);
+}
+
+/* Responsive styles */
 @media (max-width: 1024px) {
     .hero-content h1 {
         font-size: 2.5rem;
@@ -1022,6 +1226,44 @@ footer {
 
     .footer-links {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .why-choose-us .benefits-list li {
+        font-size: 16px;
+    }
+
+    .features-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features-list {
+        margin-top: 30px;
+    }
+
+    .feature-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-icon {
+        margin-bottom: 10px;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+    }
+
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+
+    .faq-answer {
+        font-size: 0.9rem;
     }
 }
 

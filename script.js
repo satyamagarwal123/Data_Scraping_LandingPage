@@ -144,4 +144,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // FAQ toggle functionality
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const toggleButton = item.querySelector('.faq-toggle');
+        toggleButton.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+
 });
