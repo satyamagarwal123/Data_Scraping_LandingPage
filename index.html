@@ -6,70 +6,85 @@
     <title>Techno Province | Professional Data Scraping Services</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="nav-foot.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <span class="logo-text">Techno Province<span class="highlight"></span></span>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </div>
-    </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    
+          <a href="./" class="logo d-flex align-items-center me-auto me-lg-0">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="./Techno Province-logo.jpg" alt="Techno Province">
+    
+          </a>
+    
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="#hero" class="active">Home<br></a></li>
+              <li><a href="about">About</a></li>
+              <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="itservice">IT-Services</a></li>
+                  <li><a href="digitalm">Digital Marketing</a></li>
+                  <li><a href="data-scraping">Data Scraping</a></li>
+                  <li><a href="video-editing">Video and Animations</a></li>
+                  <!-- <li><a href="term.html">Terms and Conditions</a></li> -->
+                </ul>
+              </li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="privacy">Privacy and Policy</a></li>
+                  <!-- <li><a href="term.html">Terms and Conditions</a></li> -->
+                </ul>
+              </li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+    
+          <a class="btn-getstarted  fs-6" href="#contact">
+            <span class="spinner-grow spinner-grow-sm " style="color: #265a56;" role="status" aria-hidden="true"></span>
+            Schedule Now
+          </a>
+    
+        </div>
+      </header>
+
+    <section id="home" class="hero-scraping">
+        <div class="scraping-container">
+            <div class="hero-scraping-content">
                 <h1 class="fade-in">Transform Web Data Into <span class="highlight">Business Intelligence</span></h1>
                 <p class="fade-in">Powerful, reliable, and ethical data scraping solutions tailored to your business needs. Extract valuable insights from the web with our advanced scraping technology.</p>
-                <div class="hero-buttons fade-in">
-                    <a href="#contact" class="primary-button">Start Scraping Today</a>
+                <div class="hero-scraping-buttons fade-in">
+                    <a href="#scraping-contact" class="scraping-primary-button">Start Scraping Today</a>
                     <a href="#how-it-works" class="secondary-button">Learn More</a>
                 </div>
             </div>
-            <div class="hero-image fade-in">
-                <div class="data-visualization">
-                    <div class="data-point" style="--delay: 0s"></div>
-                    <div class="data-point" style="--delay: 0.2s"></div>
-                    <div class="data-point" style="--delay: 0.4s"></div>
-                    <div class="data-point" style="--delay: 0.6s"></div>
-                    <div class="data-point" style="--delay: 0.8s"></div>
-                    <div class="data-point" style="--delay: 1s"></div>
-                    <div class="data-point" style="--delay: 1.2s"></div>
-                    <div class="data-line"></div>
-                </div>
+            <div class="hero-scraping-image fade-in">
+                <img src="successful-female-entrepreneur-blue-collar-shirt-removebg-preview.png">
             </div>
         </div>
-        <div class="wave-divider">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
+       
     </section>
 
-    <section id="services" class="services">
-        <div class="container">
+    <section id="scraping-services" class="scraping-services">
+        <div class="scraping-container">
             <div class="section-header">
                 <h2>Our <span class="highlight">Services</span></h2>
                 <p>Comprehensive data extraction solutions for every industry</p>
             </div>
             <div class="services-grid">
-                <div class="service-card" data-aos="fade-up">
-                    <div class="service-icon">
+                <div class="scraping-service-card" data-aos="fade-up">
+                    <div class="scraping-service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                         </svg>
@@ -77,8 +92,8 @@
                     <h3>E-commerce Data</h3>
                     <p>Extract product details, pricing, reviews, and competitor data from any e-commerce platform.</p>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
+                <div class="scraping-service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="scraping-service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"></circle>
                             <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -88,8 +103,8 @@
                     <h3>Social Media Insights</h3>
                     <p>Gather trends, mentions, and sentiment analysis from social platforms to understand your audience.</p>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
+                <div class="scraping-service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="scraping-service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
                             <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
@@ -99,8 +114,8 @@
                     <h3>Real Estate Data</h3>
                     <p>Collect property listings, prices, and market trends to make informed investment decisions.</p>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-icon">
+                <div class="scraping-service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="scraping-service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                             <line x1="3" y1="9" x2="21" y2="9"></line>
@@ -110,8 +125,8 @@
                     <h3>Financial Intelligence</h3>
                     <p>Scrape stock prices, financial news, and market data for better investment strategies.</p>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-icon">
+                <div class="scraping-service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="scraping-service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                             <circle cx="9" cy="7" r="4"></circle>
@@ -122,8 +137,8 @@
                     <h3>Lead Generation</h3>
                     <p>Extract contact information and business details to build targeted lead databases.</p>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="service-icon">
+                <div class="scraping-service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="scraping-service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                             <polyline points="14 2 14 8 20 8"></polyline>
@@ -139,49 +154,49 @@
         </div>
     </section>
 
-    <section class="features">
-        <div class="container">
+    <section class="scraping-features">
+        <div class="scraping-container">
             <div class="section-header">
                 <h2>Why Choose Our Data Scraping Services</h2>
                 <p>We deliver high-quality data with reliability and precision</p>
             </div>
-            <div class="features-content">
-                <div class="features-image">
-                    <img src="https://www.example.com/images/features-image.png" alt="Data Scraping Features">
+            <div class="scraping-features-content">
+                <div class="scraping-features-image">
+                    <img src="pexels-olia-danilevich-8145340.jpg" alt="Data Scraping Features">
                 </div>
-                <div class="features-list">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <img src="https://www.example.com/images/accuracy-icon.png" alt="Accuracy Icon">
+                <div class="scraping-features-list">
+                    <div class="scraping-feature-item">
+                        <div class="scraping-feature-icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
                         </div>
-                        <div class="feature-text">
+                        <div class="scraping-feature-text">
                             <h3>High Accuracy</h3>
                             <p>Our advanced algorithms ensure 99.9% data accuracy with thorough validation processes.</p>
                         </div>
                     </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <img src="https://www.example.com/images/scalability-icon.png" alt="Scalability Icon">
+                    <div class="scraping-feature-item">
+                        <div class="scraping-feature-icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M64 64a64 64 0 1 1 128 0A64 64 0 1 1 64 64zM25.9 233.4C29.3 191.9 64 160 105.6 160l44.8 0c27 0 51 13.4 65.5 34.1c-2.7 1.9-5.2 4-7.5 6.3l-64 64c-21.9 21.9-21.9 57.3 0 79.2L192 391.2l0 72.8c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48l0-115.7c-26.5-9.5-44.7-35.8-42.2-65.6l4.1-49.3zM448 64a64 64 0 1 1 128 0A64 64 0 1 1 448 64zM431.6 200.4c-2.3-2.3-4.9-4.4-7.5-6.3c14.5-20.7 38.6-34.1 65.5-34.1l44.8 0c41.6 0 76.3 31.9 79.7 73.4l4.1 49.3c2.5 29.8-15.7 56.1-42.2 65.6L576 464c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48l0-72.8 47.6-47.6c21.9-21.9 21.9-57.3 0-79.2l-64-64zM272 240l0 32 96 0 0-32c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2l64 64c9.4 9.4 9.4 24.6 0 33.9l-64 64c-6.9 6.9-17.2 8.9-26.2 5.2s-14.8-12.5-14.8-22.2l0-32-96 0 0 32c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-64-64c-9.4-9.4-9.4-24.6 0-33.9l64-64c6.9-6.9 17.2-8.9 26.2-5.2s14.8 12.5 14.8 22.2z"/></svg>
                         </div>
-                        <div class="feature-text">
+                        <div class="scraping-feature-text">
                             <h3>Scalable Solutions</h3>
                             <p>From small datasets to millions of records, our infrastructure scales to meet your needs.</p>
                         </div>
                     </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <img src="https://www.example.com/images/compliance-icon.png" alt="Compliance Icon">
+                    <div class="scraping-feature-item">
+                        <div class="scraping-feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM80 64l64 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L80 96c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l64 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm54.2 253.8c-6.1 20.3-24.8 34.2-46 34.2L80 416c-8.8 0-16-7.2-16-16s7.2-16 16-16l8.2 0c7.1 0 13.3-4.6 15.3-11.4l14.9-49.5c3.4-11.3 13.8-19.1 25.6-19.1s22.2 7.7 25.6 19.1l11.6 38.6c7.4-6.2 16.8-9.7 26.8-9.7c15.9 0 30.4 9 37.5 23.2l4.4 8.8 54.1 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0c-6.1 0-11.6-3.4-14.3-8.8l-8.8-17.7c-1.7-3.4-5.1-5.5-8.8-5.5s-7.2 2.1-8.8 5.5l-8.8 17.7c-2.9 5.9-9.2 9.4-15.7 8.8s-12.1-5.1-13.9-11.3L144 349l-9.8 32.8z"/></svg>
                         </div>
-                        <div class="feature-text">
+                        <div class="scraping-feature-text">
                             <h3>Legal Compliance</h3>
                             <p>All our scraping practices adhere to legal standards and website terms of service.</p>
                         </div>
                     </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <img src="https://www.example.com/images/support-icon.png" alt="Support Icon">
+                    <div class="scraping-feature-item">
+                        <div class="scraping-feature-icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
                         </div>
-                        <div class="feature-text">
+                        <div class="scraping-feature-text">
                             <h3>24/7 Support</h3>
                             <p>Our technical team is available round-the-clock to address any issues or questions.</p>
                         </div>
@@ -192,7 +207,7 @@
     </section>
 
     <section id="how-it-works" class="how-it-works">
-        <div class="container">
+        <div class="scraping-container">
             <div class="section-header">
                 <h2>How It <span class="highlight">Works</span></h2>
                 <p>Simple, efficient, and transparent process</p>
@@ -242,85 +257,20 @@
         </div>
     </section>
 
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2>Flexible <span class="highlight">Pricing</span></h2>
-                <p>Transparent pricing options to fit businesses of all sizes</p>
-            </div>
-            <div class="pricing-cards">
-                <div class="pricing-card" data-aos="zoom-in">
-                    <div class="pricing-header">
-                        <h3>Starter</h3>
-                        <div class="price">
-                            <span class="currency">$</span>
-                            <span class="amount">499</span>
-                            <span class="period">/month</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Up to 10,000 pages monthly</li>
-                        <li>Basic data cleaning</li>
-                        <li>Weekly data delivery</li>
-                        <li>CSV/JSON formats</li>
-                        <li>Email support</li>
-                    </ul>
-                    <a href="#contact" class="pricing-button">Get Started</a>
-                </div>
-                <div class="pricing-card featured" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="popular-tag">Most Popular</div>
-                    <div class="pricing-header">
-                        <h3>Professional</h3>
-                        <div class="price">
-                            <span class="currency">$</span>
-                            <span class="amount">999</span>
-                            <span class="period">/month</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Up to 50,000 pages monthly</li>
-                        <li>Advanced data cleaning</li>
-                        <li>Daily data delivery</li>
-                        <li>All data formats</li>
-                        <li>API access</li>
-                        <li>Priority support</li>
-                    </ul>
-                    <a href="#contact" class="pricing-button">Get Started</a>
-                </div>
-                <div class="pricing-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="pricing-header">
-                        <h3>Enterprise</h3>
-                        <div class="price">
-                            <span class="custom-price">Custom</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Unlimited pages</li>
-                        <li>Premium data processing</li>
-                        <li>Real-time data delivery</li>
-                        <li>Custom integrations</li>
-                        <li>Dedicated account manager</li>
-                        <li>24/7 support</li>
-                    </ul>
-                    <a href="#contact" class="pricing-button">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="testimonials" class="testimonials">
-        <div class="container">
+    <section id="scraping-testimonials" class="scraping-testimonials">
+        <div class="scraping-container">
             <div class="section-header">
                 <h2>Client <span class="highlight">Success Stories</span></h2>
                 <p>See what our clients have to say about our data scraping services</p>
             </div>
-            <div class="testimonial-slider">
-                <div class="testimonial-track">
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
+            <div class="scraping-testimonial-slider">
+                <div class="scraping-testimonial-track">
+                    <div class="scraping-testimonial-card">
+                        <div class="scraping-testimonial-content">
                             <p>"Techno Province transformed our market research capabilities. We now have access to competitor pricing data that has given us a significant edge in our industry."</p>
                         </div>
-                        <div class="testimonial-author">
+                        <div class="scraping-testimonial-author">
                             <div class="author-image"></div>
                             <div class="author-info">
                                 <h4>Sarah Johnson</h4>
@@ -328,11 +278,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
+                    <div class="scraping-testimonial-card">
+                        <div class="scraping-testimonial-content">
                             <p>"The real estate data we've gathered through Techno Province has been instrumental in our investment decisions. Their accuracy and reliability are unmatched."</p>
                         </div>
-                        <div class="testimonial-author">
+                        <div class="scraping-testimonial-author">
                             <div class="author-image"></div>
                             <div class="author-info">
                                 <h4>Michael Chen</h4>
@@ -340,11 +290,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
+                    <div class="scraping-testimonial-card">
+                        <div class="scraping-testimonial-content">
                             <p>"We've been able to generate 300% more qualified leads since implementing Techno Province's lead generation service. The ROI has been incredible."</p>
                         </div>
-                        <div class="testimonial-author">
+                        <div class="scraping-testimonial-author">
                             <div class="author-image"></div>
                             <div class="author-info">
                                 <h4>Jessica Williams</h4>
@@ -353,18 +303,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-controls">
-                    <button class="prev-testimonial" aria-label="Previous testimonial">
+                <div class="scraping-testimonial-controls">
+                    <button class="prev-scraping-testimonial" aria-label="Previous scraping-testimonial">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </button>
-                    <div class="testimonial-dots">
+                    <div class="scraping-testimonial-dots">
                         <span class="dot active"></span>
                         <span class="dot"></span>
                         <span class="dot"></span>
                     </div>
-                    <button class="next-testimonial" aria-label="Next testimonial">
+                    <button class="next-scraping-testimonial" aria-label="Next scraping-testimonial">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="9 18 15 12 9 6"></polyline>
                         </svg>
@@ -374,18 +324,18 @@
         </div>
     </section>
 
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content">
+    <section class="scraping-cta">
+        <div class="scraping-container">
+            <div class="scraping-cta-content">
                 <h2>Ready to Harness the Power of Web Data?</h2>
                 <p>Get started with Techno Province today and transform how you use data in your business.</p>
-                <a href="#contact" class="btn btn-light">Schedule a Free Consultation</a>
+                <a href="#scraping-contact" class="btn btn-light">Schedule a Free Consultation</a>
             </div>
         </div>
     </section>
 
     <section class="faq">
-        <div class="container">
+        <div class="scraping-container">
             <div class="section-header">
                 <h2>Frequently Asked <span class="highlight">Questions</span></h2>
                 <p>Find answers to common questions about our data scraping services</p>
@@ -417,52 +367,55 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
+    <section id="scraping-contact" class="scraping-contact">
+        <div class="scraping-container">
+            <div class="scraping-contact-content">
+                <div class="scraping-contact-info" data-aos="fade-right">
                     <div class="section-header">
                         <h2>Ready to <span class="highlight">Get Started?</span></h2>
                         <p>Contact us today to discuss your data scraping needs</p>
                     </div>
-                    <div class="contact-details">
-                        <div class="contact-item">
+                    <div class="scraping-contact-details">
+                        <div class="scraping-contact-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                             </svg>
-                            <span>(123) 456-7890</span>
+                            <span>+91 8800831768</span>
                         </div>
-                        <div class="contact-item">
+                        <div class="scraping-contact-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
-                            <span>info@dataharvestpro.com</span>
+                            <span>connect@technoprovince.com</span>
                         </div>
-                        <div class="contact-item">
+                        <div class="scraping-contact-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
-                            <span>123 Data Street, Tech City, TC 12345</span>
+                            <span>Suite Number 1806, Sapphire Suites, Galaxy Blue Sapphire, Greater Noida West, 201318, National Capital Region, New Delhi</span>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-container" data-aos="fade-left">
-                    <form class="contact-form" id="contactForm">
+                <div class="scraping-contact-form-container" data-aos="fade-left">
+                    <form class="scraping-contact-form" id="scraping-contactForm">
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required>
                         </div>
+
+                        <div class="form-group">
+                            <label for="scraping-contact">Contact no.</label>
+                            <input type="text" id="scraping-contact" name="scraping-contact">
+                        </div>
+
                         <div class="form-group">
                             <label for="email">Email Address</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-                        <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company">
-                        </div>
-                        <div class="form-group">
+                       
+                        <!-- <div class="form-group">
                             <label for="service">Service Interested In</label>
                             <select id="service" name="service">
                                 <option value="e-commerce">E-commerce Data</option>
@@ -472,9 +425,9 @@
                                 <option value="lead-generation">Lead Generation</option>
                                 <option value="custom">Custom Solution</option>
                             </select>
-                        </div>
+                        </div> -->
                         <div class="form-group">
-                            <label for="message">Project Details</label>
+                            <label for="message">Message</label>
                             <textarea id="message" name="message" rows="4" required></textarea>
                         </div>
                         <button type="submit" class="submit-button">Send Message</button>
@@ -484,67 +437,67 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-text">Techno Province<span class="highlight"></span></span>
-                    <p>Professional data scraping services for businesses of all sizes.</p>
+    <footer id="footer" class="footer dark-background">
+
+        <div class="footer-top">
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-lg-4 col-md-6 footer-about">
+                <a href="./" class="logo d-flex align-items-center">
+                  <span class="sitename">Techno Province Solutions</span>
+    
+                </a>
+    
+                <div class="footer-contact pt-3">
+                  <p>Suite Number 1806, Sapphire Suites, Galaxy Blue Sapphire, Greater Noida West, 201318, National Capital
+                    Region, New Delhi</p>
+                  <!-- <p>Greater Noida</p> -->
+                  <p class="mt-3"><strong>Phone:</strong> <span>+91 8800831768</span></p>
+                  <p><strong>Email:</strong> <span>connect@technoprovince.com</span></p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#pricing">Pricing</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Legal</h4>
-                        <ul>
-                            <li><a href="#privacy">Privacy Policy</a></li>
-                            <li><a href="#terms">Terms of Service</a></li>
-                            <li><a href="#compliance">Compliance</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Resources</h4>
-                        <ul>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#case-studies">Case Studies</a></li>
-                            <li><a href="#documentation">Documentation</a></li>
-                            <li><a href="#faq">FAQ</a></li>
-                        </ul>
-                    </div>
+                <div class="social-links d-flex mt-4">
+                  <a target="_blank" href="https://x.com/technoprovince"><i class="bi bi-twitter-x"></i></a>
+                  <a target="_blank" href="https://www.facebook.com/technoprovince/"><i class="bi bi-facebook"></i></a>
+                  <a target="_blank" href=""><i class="bi bi-instagram"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/company/techno-province"><i
+                      class="bi bi-linkedin"></i></a>
                 </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#hero"> Home</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="about"> About us</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#services call-to-action"> Services</a></li>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <a href="term.html"> Terms of service</a></li> -->
+                  <li><i class="bi bi-chevron-right"></i> <a href="privacy"> Privacy policy</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <a href="itservice"> IT-Services</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="digitalm"> Digital Marketing Services</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="video-editing"> Video and Animation</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="data-scraping"> Data Scrapping</a></li>
+                </ul>
+              </div>
+    
+         
+    
+    
             </div>
-            <div class="footer-bottom">
-                <!-- <p>&copy; 2023 DataHarvestPro. All rights reserved.</p> -->
-                <div class="social-links">
-                    <a href="#" aria-label="Twitter">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+          </div>
         </div>
-    </footer>
+    
+     
+      </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 </html>
